@@ -2,21 +2,23 @@
 #include<conio.h>
 
 struct Student{
-    char *Name ;
+    char Name[20] ;
     int age ;
 
 };
+void Blr(struct  Student s1){
+
+    printf("%s",s1.Name);
+}
 
 int main(){
 
 
 
-    struct Student s1;
-    struct Student s2 ;
-    s1.Name = "lokesh";
-
-    printf("%s", s1.Name);
-
-    return 0;
- 
+   struct  Student s1= 
+   {
+    /* data */" lokesh g", 34
+   };
+   
+Blr(s1);
 }
