@@ -8,16 +8,22 @@ struct student
     int rollno;
     float marks; /* data */
 };
+void initialize(struct  student* s){
+    printf("enter name");
+    scanf("%s",(*s).name);
+    printf("enter roll");
+    scanf("%d" ,&s ->rollno);
+    printf("enter marks");
+    scanf("%f",&s->marks);
+}
 
 int main()
 {
-    struct student s1;
-    printf("enter ur  name marks roll no ");
-
-    scanf("%s", s1.name);
-    scanf("%d", &s1.rollno);
-    scanf("%f", &s1.marks);
-    printf("%s %d %f", s1.name, &s1.rollno, &s1.marks);
-
+    struct student s;
+    initialize(&s);
+    printf(
+        " %s | %d | %f" ,s.name,s.rollno,s.marks
+    );
+  
     return 0;
 }
