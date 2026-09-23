@@ -1,8 +1,8 @@
-class Student {
+public class Student {
 
 public static void main(String[] args) {
     
-    int a  = 23l;
+     long  a  = 2l;
     System.err.println(a);
 }
 }
